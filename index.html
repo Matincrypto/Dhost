@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://aypan17.github.io/machiavelli/ -->
+<html>
+  <link type="text/css" rel="stylesheet" id="dark-mode-custom-link" /><link
+    type="text/css"
+    rel="stylesheet"
+    id="dark-mode-general-link"
+  /><style lang="en" type="text/css" id="dark-mode-custom-style"></style
+  ><style lang="en" type="text/css" id="dark-mode-native-style"></style
+  ><style lang="en" type="text/css" id="dark-mode-native-sheet"></style
+  ><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="files/bootstrap.min.css" />
+    <link href="files/css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="files/style.css" />
+
+    <object type="text/html" data="header-vars.html"></object>
+    <title>Dhost</title>
+    <meta property="og:site_name" content="INSERT TITLE" />
+    <meta property="og:title" content="INSERT TITLE" />
+    <meta property="og:description" content="INSERT DESCRIPTION" />
+    <meta property="og:url" content="INSERT LINK" />
+    <meta property="og:image" content="INSERT PREVIEW IMAGE" />
+
+    <meta property="article:publisher" content="https://apartresearch.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="INSERT TITLE" />
+    <meta name="twitter:description" content="INSERT DESCRIPTION" />
+    <meta name="twitter:url" content="INSERT LINK" />
+    <meta name="twitter:image" content="INSERT PREVIEW IMAGE" />
+
+    <script src="files/p5.js"></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="files/sketch.js"
+    ></script>
+  </head>
+
+  <div>
+    <template shadowrootmode="open">
+      <style>
+        @font-face {
+          font-family: Poppins;
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+          src: url(poppins-devanagari-400-normal.20fc2635.woff2) format("woff2"),
+            url(poppins-all-400-normal.0298587e.woff) format("woff");
+          unicode-range: U+900-97F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+            U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+        }
+        @font-face {
+          font-family: Poppins;
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+          src: url(poppins-latin-ext-400-normal.9f87e1a8.woff2) format("woff2"),
+            url(poppins-all-400-normal.0298587e.woff) format("woff");
+          unicode-range: U+100-24F, U+259, U+1E??, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: Poppins;
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+          src: url(poppins-latin-400-normal.53f07e8c.woff2) format("woff2"),
+            url(poppins-all-400-normal.0298587e.woff) format("woff");
+          unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC,
+            U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+            U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: Poppins;
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: url(poppins-devanagari-600-normal.5b72b0b7.woff2) format("woff2"),
+            url(poppins-all-600-normal.29420735.woff) format("woff");
+          unicode-range: U+900-97F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+            U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+        }
+        @font-face {
+          font-family: Poppins;
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: url(poppins-latin-ext-600-normal.472ef062.woff2) format("woff2"),
+            url(poppins-all-600-normal.29420735.woff) format("woff");
+          unicode-range: U+100-24F, U+259, U+1E??, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: Poppins;
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: url(poppins-latin-600-normal.15391d77.woff2) format("woff2"),
+            url(poppins-all-600-normal.29420735.woff) format("woff");
+          unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC,
+            U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+            U+FEFF, U+FFFD;
+        }
+      </style>
+      <div id="plasmo-shadow-container" style="z-index: 1; position: absolute">
+        <div
+          id="plasmo-mount-container"
+          style="display: flex; position: relative; top: 0px; left: 0px"
+        ></div></div
+    ></template>
+  </div>
+  <body cz-shortcut-listen="true">
+    <div class="container banner-container">
+      <div style="padding: 50px 0 0 0">
+        <b>
+        <h1 class="text-center">Dhost</h1>
+        </b>
+        <h4 class="text-center">
+          If we want to define the Internet, 
+          we must refer to the hardware that moves data around the world. 
+          These servers initially store the data and keep it in a secure environment. 
+          But this was a summary of the performers who have been active until today.
+        </h4> 
+        <h4 class="text-center"></h4>
+         <div>
+            <h2 class="text-center">
+              <b>What will future hosts look like?</b></h2>
+        </div>
+        <br />
+      
+        <br />
+            
+              <path
+                fill="currentColor"
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path></svg
+            
+          
+            <svg
+              style="
+                width: 24px;
+                height: 24px;
+                margin-left: -12px;
+                margin-right: 12px;
+              "
+              width="24px"
+              height="24px"
+              viewBox="0 0 375 531"
+            >
+              <polygon
+                fill="currentColor"
+                points="0.5,0.866 459.5,265.87 0.5,530.874 "
+              ></polygon>
+            </svg>
+            
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="outer-container">
+      <div class="container main-container">
+        <div class="row">
+          <div class="col-md-12" style="text-align: center">
+            
+          </div>
+        </div>
+        <br />
+
+        <!-- SECTION ---------------------------------------------------------------------- -->
+        <h1>
+        </h1>
+        <div class="text-center">
+          <br>
+
+        </br>
+
+        </div>
+        
+          <div><img src="centrall.png" alt=""
+          style="width:700px;height:300px;"></div>
+          
+        <div class="row">
+          <div class="col-md-12">
+          <p>
+              <h4 class="text-center">
+              In the above picture, you are watching hardware disks that are kept in a specific and isolated environment. These hardware are specifically for web 2 network and a single company is responsible for maintaining these hardware disks. These hardware store their data at the customer's request and use domain and data addressing to display the data with user request. Technically everything is correct and there is no problem. Using the point-to-point formula, variable and fixed costs can be calculated, and the final price estimates the profit of a hosting company's services. This is an ultimate system of hosting, a general view of business and technology. 
+              The distinguishing factor in the discussion of technological advancement lies in both the business and technology aspects. Current hosting versions do not have any issues in implementation, but it is possible to reduce costs and create innovation in terms of infrastructure as shown in the images below
+            </h4>
+          </p>
+          </div>
+        </div>
+        <div class="row captioned_img">
+          <div class="col-md-12">
+            <br />
+          
+          </div>
+        </div>
+        <hr class="divider" />
+
+        <!-- SECTION ---------------------------------------------------------------------- -->
+        <h1 class="text-center">Decentralized</h1>
+        <div><img src="decentrall.png" alt=""
+          style="width:800px;height:400px;"></div>
+          <div class="text-center">
+            
+            <b> 
+            <h4>     
+              In the world, there are billions of hardware disks with various processing capabilities that are not fully utilized. 
+              For example, a refrigerator repair service company uses a high-capacity server for storing its own and customers' data, 
+              but does this server operate at full power during use or not?            
+            </h4>
+            </b>
+            <b>
+             <h4>
+              The answer is no, because typically a company only uses 40% to 60% of the main capacity, 
+              and the rest of the network remains unused, which incurs maintenance and repair costs, 
+              making the actual cost of a server almost double. What is the solution and innovation?
+             </h4>
+            <b>         
+              <h4>
+              Imagine there are several companies in the world facing these problems. 
+              Now, at this stage, we are supposed to step in. DHost can cover part of the 
+              maintenance costs of such hardware partitions with its unique mechanism worldwide (see the image above). 
+              It will be distributed inside various servers and provide high-quality services to customers at a low cost, 
+              and using attractive and practical tokenomics, it provides financial assistance for hardware maintenance.
+             </h4>
+          </b>
+         </div>
+
+        <!-- Uncomment this to make an interesting table of information -->
+        <!-- <div class="row" style="text-align: center">
+          <div class="col-md-6">
+            <p class="stat">134</p>
+            <p class="statlabel">Games</p>
+          </div>
+          <div class="col-md-6">
+            <p class="stat">4,559</p>
+            <p class="statlabel">Achievements</p>
+          </div>
+        </div>
+        <div class="row" style="text-align: center">
+          <div class="col-md-6">
+            <p class="stat">572,322</p>
+            <p class="statlabel">Scenarios</p>
+          </div>
+          <div class="col-md-6">
+            <p class="stat">2,861,610</p>
+            <p class="statlabel">Annotations</p>
+          </div>
+        </div> -->
+        <hr class="divider" />
+
+        <!-- SECTION ---------------------------------------------------------------------- -->
+        <h1 class="text-center">Innovation</h1>
+        <div class="row">
+          <div>
+            <p>
+              <h4 class="text-center">
+              <br>With this change in our structure, we can achieve the following innovations:</br>
+
+              <br>1: Low cost alongside consistent quality</br>
+
+              <br>2: High security and accessibility</br>
+
+              <br>3: International customers</br>
+            </h4>  
+            </p>
+          </div>
+
+
+        <!-- SECTION ---------------------------------------------------------------------- -->
+    </script>
+  </body>
+</html>
